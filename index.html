@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>João Pedro | Meu Primeiro Site utilizando HTML</title>
+  <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Dica: futuramente vamos adicionar um arquivo CSS externo aqui -->
+  <div class="container">
+    <!-- seu conteúdo aqui -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <div class="container">
+        <!-- todo o conteúdo atual vai aqui dentro -->
+      </div>
+</head>
+<body>
+
+  <!-- TÍTULO PRINCIPAL -->
+  <h1 id="titulo"></h1>
+  <section>
+    <div class="foto-container">
+        <img src="minhafoto.jpeg" alt="Foto de João Pedro">
+      </div>
+    <h2>Sobre mim</h2>
+    <p>Olá! Me chamo João Pedro, sou apaixonado por tecnologia, design e comunicação visual. 
+    Atualmente estudo Análise e Desenvolvimento de Sistemas e estou focado em me tornar um desenvolvedor Front-End. 
+    Tenho experiência com design gráfico e agora estou me aprofundando em HTML, CSS e JavaScript para transformar ideias em interfaces incríveis.</p>
+    <p>Gosto de desafios criativos, aprender coisas novas e usar a programação como uma forma de expressar minha criatividade.</p>
+  </section>
+  <!-- PARÁGRAFO DE INTRODUÇÃO -->
+
+  <!-- LISTA DE CONTEÚDOS -->
+  <h2>Tópicos que quero dominar:</h2>
+  <ul>
+    <li>HTML básico e semântico</li>
+    <li>CSS para estilizar</li>
+    <li>JavaScript para deixar tudo interativo</li>
+  </ul>
+  <button class="botao">Ver mais</button>
+
+
+  <!-- IMAGEM EXEMPLO -->
+ 
+  <!-- LINKS EXTERNOS OU INTERNOS -->
+  <p><i class="fas fa-paint-brush"></i> <a href="#">Estou aprendendo CSS</a></p>
+  <p><i class="fas fa-code"></i> <a href="#">Estou aprendendo JavaScript</a></p>
+    <p><i class="fas fa-book"></i> <a href="#">Estou aprendendo HTML</a></p>  
+
+  <!-- LINHA DE SEPARAÇÃO -->
+  <hr>
+
+  <!-- RODAPÉ -->
+  <footer>
+    <p>
+        Entre em contato: @joaoferreir33
+    </p>
+  </footer>
+  <script>
+    const titulo = document.getElementById("titulo");
+    const texto = "Olá, eu sou João Pedro!";
+    let index = 0;
+  
+    function escreverTitulo() {
+      if (index < texto.length) {
+        titulo.innerHTML += texto.charAt(index);
+        index++;
+        setTimeout(escreverTitulo, 100); // velocidade da digitação (100ms)
+      }
+    }
+  
+    window.onload = escreverTitulo;
+  </script>
+  
+</div>
+</body>
+</html>
